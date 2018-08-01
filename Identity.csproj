@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-Identity-A2E9A157-A5C0-482A-9C19-74CF2A832BE5</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" PrivateAssets="All" />
+  </ItemGroup>
+    <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Home\Privacy.cshtml" />
+    <Content Remove="Views\Home\Contact.cshtml" />
+    <Content Remove="Views\Home\About.cshtml" />
+    <Content Remove="Views\Home\Registers\Create.cshtml" />
+    <Content Remove="Views\Home\Registers\Delete.cshtml" />
+    <Content Remove="Views\Registers\Create.cshtml" />
+    <Content Remove="Views\Registers\Delete.cshtml" />
+    <Content Remove="Views\Registers\Details.cshtml" />
+    <Content Remove="Views\Registers\Edit.cshtml" />
+    <Content Remove="Views\Registers\Index.cshtml" />
+    <Content Remove="Views\Admin\Index.cshtml" />
+    <Content Remove="Views\startbootstrap-new-age-gh-pages\package-lock.json" />
+    <Content Remove="Views\startbootstrap-new-age-gh-pages\package.json" />
+    <Content Remove="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Views\ApplicationRole\ApplicationRole.html" />
+    <None Remove="Views\ApplicationRole\Application-role-index.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Views\Registers\Create.cshtml" />
+    <None Include="Views\Registers\Delete.cshtml" />
+    <None Include="Views\Registers\Details.cshtml" />
+    <None Include="Views\Registers\Edit.cshtml" />
+    <None Include="Views\Registers\Index.cshtml" />
+    <None Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Controllers\IdentityController.cs" />
+    <Compile Remove="Controllers\RegistrationController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\Home\" />
+  </ItemGroup>
+</Project>
